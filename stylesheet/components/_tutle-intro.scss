@@ -1,0 +1,9 @@
+.turtle_intro {
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.intro_item:hover .turtle_intro {
+    opacity: 1;
+}

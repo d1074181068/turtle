@@ -1,10 +1,18 @@
-.carousel-item img{
-    height:unset;
+.banner_turtle {
+    margin-top: 0px
+}
+
+.carousel-item img {
+    height: unset;
 }
 
 
 @media (min-width: 992px) {
-    .carousel-item img{
+    .banner_turtle {
+        margin-top: -81px;
+    }
+
+    .carousel-item img {
         height: 100vh;
         width: 100vw;
     }

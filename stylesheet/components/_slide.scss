@@ -1,0 +1,32 @@
+.slideup_item {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: .3s;
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.slidedown_item {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .3s;
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.slideleft_item {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: .3s;
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
