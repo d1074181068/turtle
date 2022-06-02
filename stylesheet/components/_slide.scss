@@ -1,4 +1,4 @@
-.slideup_item {
+.slidedown_item {
     opacity: 0;
     transform: translateY(-100px);
     transition: .3s;
@@ -9,7 +9,7 @@
     }
 }
 
-.slidedown_item {
+.slideup_item {
     opacity: 0;
     transform: translateY(100px);
     transition: .3s;

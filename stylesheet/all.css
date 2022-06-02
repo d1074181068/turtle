@@ -12045,7 +12045,7 @@ fieldset:disabled .btn {
           transform: translateY(-15px);
 }
 
-.slideup_item {
+.slidedown_item {
   opacity: 0;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
@@ -12053,13 +12053,13 @@ fieldset:disabled .btn {
   transition: .3s;
 }
 
-.slideup_item.active {
+.slidedown_item.active {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-.slidedown_item {
+.slideup_item {
   opacity: 0;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
@@ -12067,7 +12067,7 @@ fieldset:disabled .btn {
   transition: .3s;
 }
 
-.slidedown_item.active {
+.slideup_item.active {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
