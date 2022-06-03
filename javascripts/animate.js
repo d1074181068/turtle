@@ -1,8 +1,14 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         const windowpos = $(window).scrollTop();
-        const aboutus = $('#aboutus').offset().top;
-        const aboutus_height = $('#aboutus').outerHeight();
-        console.log(aboutus_height, aboutus);
+
+        $('.scroll_animate').each(function () {
+            const this_offset = $(this).offset().top;
+            const windowHeight = $(window).height();
+            if ((windowpos + (windowHeight / 2 + 200)) >= this_offset) {
+                $(this).addClass('active');
+            }
+        });
+
     });
 });
