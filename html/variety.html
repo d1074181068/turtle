@@ -13,7 +13,7 @@
     <meta property="og:description" content="想了解 烏龜嗎 ? 點進來就知道了哈">
     <meta property="og:site_name" content="烏龜百科">
     <meta property="og:locale" content="zh_TW">
-    <title>layout</title>
+    <title>品種選擇 - 陸龜 & 水龜 | 烏龜百科</title>
     <link rel="icon" href="../images/turtle.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../stylesheet/all.css">
@@ -24,12 +24,12 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <h1 class="logo">
+                    <h2 class="logo">
                         <a class="navbar-brand fw-bolder" href="./index.html">
                             <img src="../images/logo.png" alt="logo圖" class="img-fluid">
                             烏龜百科
                         </a>
-                    </h1>
+                    </h2>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#header_offcanvas" aria-controls="header_offcanvas" aria-expanded="false"
@@ -64,6 +64,43 @@
 
     <main>
         <!-- 主要區域 -->
+        <div class="container p-4">
+            <h1 class="text-success fw-bolder fst-italic py-4">請選擇烏龜種類</h1>
+            <ul class="row row-cols-1 row-cols-lg-2 list-unstyled">
+                <li class="col">
+                    <a href="./water_kind.html" class="intro_item">
+                        <div class="card jump_item">
+                            <img class="rounded" src="../images/water/ban/ban3.JPG" alt="斑龜">
+                            <div class="card-body card-img-overlay top-auto bg-gradient-dark turtle_intro">
+                                <h2 class="card-title text-white fw-bolder fst-italic">
+                                    水龜
+                                </h2>
+                                <div class="lead card-text text-white">
+                                    長期跟水一起生活的龜種，適合公寓住戶飼養的寵物
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="./land_kind.html" class="intro_item">
+                        <div class="card jump_item">
+                            <img class="rounded" src="../images/land/yada/yada3.jpg" alt="亞達圖">
+                            <div class="card-body card-img-overlay top-auto bg-gradient-dark turtle_intro">
+                                <h2 class="card-title text-white fw-bolder fst-italic">
+                                    陸龜
+                                </h2>
+                                <div class="lead card-text text-white">
+                                    大部分的龜種飼養皆須證書，適合家裡有足夠空間的住戶飼養
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
     </main>
 
     <footer class="p-4 bg-secondary">

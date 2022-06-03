@@ -69,7 +69,7 @@ $primary: $blue  !default;
 $secondary: $gray-600  !default;
 $success: $green  !default;
 $info: $cyan  !default;
-$warning: $yellow  !default;
+$warning: #C47451 !default;
 $danger: $red  !default;
 $light: $gray-100  !default;
 $dark: $gray-900  !default;
@@ -82,7 +82,7 @@ $theme-colors: (
     //$secondary,
     "success": $success,
     "info": $info,
-    "warning": $warning,
+    "warning": #C47451,
     "danger": $danger,
     "light": $light,
     "dark": $dark) !default;
