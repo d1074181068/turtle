@@ -1,5 +1,9 @@
-.object-contain {
-    object-fit: contain;
+.object-fill {
+    object-fit: fill;
+}
+
+.object-cover {
+    object-fit: cover;
 }
 
 .bg-gradient-dark {
