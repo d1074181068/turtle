@@ -264,19 +264,7 @@ function render(data_arr, kind) {
     if (current_item.feed == '保育類無法飼養') {
         feed_star = '保育類無法飼養';
         action_star = '無法飼養';
-        for (let k = 1; k <= current_item.img_count; k++) {
-            if (k == 1) {
-                swiper_str += `
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100 w-100 object-cover" alt="...">
-                </div>`
-            } else {
-                swiper_str += `
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100 w-100 object-cover" alt="...">
-                </div>`
-            }
-        }
+        swipertxt(current_item);
     } else {
         for (let i = 1; i <= current_item.feed; i++) {
             feed_star += `<img src="../images/icon_star.svg" alt="星星圖">`;
@@ -289,20 +277,8 @@ function render(data_arr, kind) {
                 action_star += `<img src="../images/icon_star.svg" alt="星星圖">`;
             }
         }
+        swipertxt(current_item);
 
-        for (let k = 1; k <= current_item.img_count; k++) {
-            if (k == 1) {
-                swiper_str += `
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100 object-cover" alt="...">
-                </div>`
-            } else {
-                swiper_str += `
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100 object-cover" alt="...">
-                </div>`
-            }
-        }
     }
     bread_active.textContent = current_item.name;
     item_name.textContent = current_item.name;
@@ -323,7 +299,21 @@ function render(data_arr, kind) {
     decription3.textContent = current_item.decription3;
     swiper.innerHTML = swiper_str;
 }
-
+function swipertxt(current_item) {
+    for (let k = 1; k <= current_item.img_count; k++) {
+        if (k == 1) {
+            swiper_str += `
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                </div>`
+        } else {
+            swiper_str += `
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                </div>`
+        }
+    }
+}
 function reset() {
     feed_star = '';
     action_star = '';
