@@ -11,4 +11,14 @@ $(document).ready(function () {
         });
 
     });
+
+
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 700) {
+            $('.to_top').fadeIn();
+        } else {
+            $('.to_top').fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
 });

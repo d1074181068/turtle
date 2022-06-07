@@ -1,0 +1,27 @@
+.to_top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 199;
+
+    p {
+        display: none;
+        width: 41px;
+        height: 157px;
+        background-image: url(../../images/gotop.png);
+        background-repeat: no-repeat;
+        writing-mode: vertical-lr;
+        padding: 16px 8px;
+        letter-spacing: 5px;
+    }
+
+    &:hover p {
+        display: block;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
