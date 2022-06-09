@@ -43,28 +43,13 @@ footer {
     }
 }
 
-nav {
-    .nav-tabs {
-        border-bottom: 1px solid $warning;
+.accordion-header .accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #C1AC95;
+}
 
-        .nav-link {
-            border-radius: 0.3rem 0.3rem 0rem 0rem;
-
-            &.active {
-                border-radius: 0.3rem 0.3rem 0rem 0rem;
-                background-color: $body;
-                border-color: #614124 #614124 $body;
-            }
-
-            &:hover,
-            &:focus {
-                border-radius: 0.3rem 0.3rem 0rem 0rem;
-                border-color: #614124 #614124 $body;
-                isolation: isolate;
-            }
-
-        }
-    }
+article p {
+    color: $warning;
 }
 
 .breadcrumb a {

@@ -1,0 +1,23 @@
+nav {
+    .nav-tabs {
+        border-bottom: 1px solid $warning;
+
+        .nav-link {
+            border-radius: 0.3rem 0.3rem 0rem 0rem;
+
+            &.active {
+                border-radius: 0.3rem 0.3rem 0rem 0rem;
+                background-color: $body;
+                border-color: $warning $warning $body;
+            }
+
+            &:hover,
+            &:focus {
+                border-radius: 0.3rem 0.3rem 0rem 0rem;
+                border-color: $warning $warning $body;
+                isolation: isolate;
+            }
+
+        }
+    }
+}
