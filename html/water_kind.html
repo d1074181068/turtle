@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../stylesheet/all.css">
 </head>
 
-<body>
+<body class="bgc-body">
     <div class="to_top">
         <a href="#" class="text-decoration-none">
             <p class="text-white fw-bolder m-2 mb-0">帶我回上方</p>
@@ -76,9 +76,9 @@
         <div class="container px-4 pt-4">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./index.html" class="text-success">首頁</a>
+                    <li class="breadcrumb-item"><a href="./index.html" class="text-warning">首頁</a>
                     </li>
-                    <li class="breadcrumb-item"><a href="./variety.html" class="text-success">種類選擇</a>
+                    <li class="breadcrumb-item"><a href="./variety.html" class="text-warning">種類選擇</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">水龜</li>
                 </ol>
@@ -88,13 +88,13 @@
             <div class="row g-4">
                 <div class="col-12 col-lg-2 me-lg-5">
                     <div class="sticky-lg-top" style="top:90px;">
-                        <div class=" list-group ">
+                        <div class=" list-group">
                             <a href="#local"
-                                class="list-group-item list-group-item-action text-decoration-none link-success">台灣原生種</a>
+                                class="list-group-item list-group-item-action bg-theme text-decoration-none link-success">台灣原生種</a>
                             <a href="#foreign"
-                                class="list-group-item list-group-item-action text-decoration-none link-success">外國來的朋友</a>
+                                class="list-group-item list-group-item-action bg-theme text-decoration-none link-success">外國來的朋友</a>
                             <a href="./land_kind.html"
-                                class="list-group-item list-group-item-action text-decoration-none link-warning">來去看陸龜
+                                class="list-group-item list-group-item-action bg-theme text-decoration-none link-warning">來去看陸龜
                                 ~</a>
                         </div>
                     </div>
@@ -103,9 +103,9 @@
 
                 <div class="col-12 col-lg-8">
                     <ul class="row list-unstyled g-4 mb-4" id="local">
-                        <h2 class="col-12 pb-2 border-bottom fst-italic">台灣原生種</h2>
+                        <h2 class="col-12 pb-2 border-bottom border-warning">台灣原生種</h2>
                         <li class="col-12 col-md-6">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -116,7 +116,7 @@
                                             <h5 class="card-title">斑龜</h5>
                                             <p class="card-text">性格溫和且親人，是台灣最多人飼養的品種。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(0,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -126,7 +126,7 @@
                             </div>
                         </li>
                         <li class="col-12 col-md-6">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -137,7 +137,7 @@
                                             <h5 class="card-title">金龜</h5>
                                             <p class="card-text">四種本土澤龜之一，為台灣II級保育類動物。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(1,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -147,7 +147,7 @@
                             </div>
                         </li>
                         <li class="col-12 col-md-6">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -158,7 +158,7 @@
                                             <h5 class="card-title">柴棺龜</h5>
                                             <p class="card-text">又稱黃喉擬水龜，為台灣II級保育類動物。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(2,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -171,9 +171,9 @@
 
 
                     <ul class="row row-cols-1 row-cols-md-2 list-unstyled g-4 mt-4" id="foreign">
-                        <h2 class="col-12 col-md-12 py-2 border-bottom fst-italic">外國來的朋友</h2>
+                        <h2 class="col-12 col-md-12 py-2 border-bottom border-warning">外國來的朋友</h2>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -184,7 +184,7 @@
                                             <h5 class="card-title">巴西龜</h5>
                                             <p class="card-text">適應力超強的烏龜，已完全本土化。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(3,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -194,7 +194,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -205,7 +205,7 @@
                                             <h5 class="card-title">東部錦龜</h5>
                                             <p class="card-text">喜歡流速緩慢的區域，非常悠閒派的品種。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(4,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -215,7 +215,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -226,7 +226,7 @@
                                             <h5 class="card-title">擬鱷龜</h5>
                                             <p class="card-text">生性十分兇猛，除了鱷魚外幾乎沒有天敵。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(5,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -236,7 +236,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -247,7 +247,7 @@
                                             <h5 class="card-title">真鱷龜</h5>
                                             <p class="card-text">長年居住水底，喜歡用陷阱被動式捕食獵物。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(6,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -257,7 +257,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -268,7 +268,7 @@
                                             <h5 class="card-title">地圖龜</h5>
                                             <p class="card-text">俗稱龜界二哈，非常神經質的品種。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(7,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -278,7 +278,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -289,7 +289,7 @@
                                             <h5 class="card-title">甜甜圈龜</h5>
                                             <p class="card-text">個性非常好動，常常有用不完的精力。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(8,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -299,7 +299,7 @@
                             </div>
                         </li>
                         <li class="col">
-                            <div class="card rounded jump_item h-100">
+                            <div class="card rounded bg-theme border-footer jump_item h-100">
                                 <div class="row flex-column flex-lg-row h-100">
                                     <div class="col">
                                         <img class="img-fluid h-100 w-100 object-cover rounded"
@@ -310,7 +310,7 @@
                                             <h5 class="card-title">屋頂龜</h5>
                                             <p class="card-text">又名剃刀麝香龜，水性極佳常待在水底遊走。</p>
                                             <div class="d-flex justify-content-end mt-auto">
-                                                <a class="me-4 fst-italic text-decoration-none link-success stretched-link"
+                                                <a class="me-4 text-decoration-none link-warning stretched-link "
                                                     href="#" onclick="location_href(9,'water')">詳細資訊 ...</a>
                                             </div>
 
@@ -326,8 +326,8 @@
         </div>
     </main>
 
-    <footer class="p-4 bg-secondary">
-        <div class="p-4 mb-3 border-bottom border-light"> </div>
+    <footer class="p-4 bg-footer">
+        <div class="p-4 mb-3 border-bottom border-warning"> </div>
         <div class="container">
 
             <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
