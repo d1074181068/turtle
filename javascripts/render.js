@@ -306,12 +306,12 @@ function swipertxt(current_item) {
         if (k == 1) {
             swiper_str += `
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100" alt="...">
                 </div>`
         } else {
             swiper_str += `
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100" alt="...">
                 </div>`
         }
     }
