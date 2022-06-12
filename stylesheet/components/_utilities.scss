@@ -60,3 +60,13 @@ article li {
         text-decoration: underline;
     }
 }
+
+.kind_img {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+@media (min-width: 992px) {
+    .kind_img {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+}

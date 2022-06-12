@@ -223,13 +223,15 @@ const land_data = [
     },
 ]
 
-const link = document.location.href.toString();
-const regex_id = /(?<=\?)\d/;
-const check_id = link.match(regex_id);
-const regex_kind = /(?<=\&)\w*/;
-const check_kind = link.match(regex_kind);
-const data_id = check_id[0];
-const data_kind = check_kind[0];
+const link = document.location.href;
+const detailURL = new URL(link);
+const params = detailURL.searchParams;
+let data_key = [];
+for (let pair of params.entries()) {
+    data_key.push(pair[1]);
+}
+const data_id = data_key[0];
+const data_kind = data_key[1];
 
 const item_name = document.querySelector('#item_name');
 const feed = document.querySelector('#feed');
@@ -304,12 +306,12 @@ function swipertxt(current_item) {
         if (k == 1) {
             swiper_str += `
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}1.jpg" height="300" class="d-block w-100" alt="...">
                 </div>`
         } else {
             swiper_str += `
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100 object-cover" alt="...">
+                    <img src="../images/${data_kind}/${current_item.eng_name}/${current_item.eng_name}${k}.jpg" height="300" class="d-block w-100" alt="...">
                 </div>`
         }
     }
