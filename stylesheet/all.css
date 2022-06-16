@@ -68,6 +68,10 @@
   color: #C85A17;
 }
 
+.intro .item_swiper {
+  z-index: -199;
+}
+
 @media (min-width: 992px) {
   .kind_img {
     border-radius: 1rem 0rem 0rem 1rem;
