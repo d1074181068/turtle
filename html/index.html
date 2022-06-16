@@ -31,7 +31,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <h1 class="logo">
+                    <h1 class="logo mb-0">
                         <a class="navbar-brand fw-bolder" href="./index.html">
                             <img src="../images/logo.png" alt="logo圖" class="img-fluid">
                             烏龜百科
@@ -78,7 +78,7 @@
 
     <main>
         <!-- 主要區域 -->
-        <div id="turtle_swiper" class="banner_turtle carousel slide bg-secondary mb-3" data-bs-ride="carousel">
+        <div id="turtle_swiper" class="banner_turtle carousel slide mb-3" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#turtle_swiper" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -94,42 +94,35 @@
                     aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
-                <div class="swiper_item carousel-item h-100 active">
-                    <img src="../images/land/yada/yada3.jpg" class="d-block  img-fluid object-fill" alt="banner_亞達象龜圖">
+                <div class="swiper_item carousel-item h-100 active " data-bs-interval="2500">
+                    <img src="../images/land/yada/yada3.jpg" class="d-block img-fluid object-cover" alt="banner_亞達象龜圖">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder text-light">世界第二大陸龜-亞達伯拉象龜</h2>
+                        <h2 class="fw-bolder text-light">想探索你從未接觸的陸龜嗎 ? </h2>
+                        <a href="./land_kind.html"
+                            class="btn btn-light rounded-pill px-5 mt-3 jump_item">點我探索奇妙的陸龜世界</a>
                     </div>
                 </div>
-                <div class="swiper_item carousel-item h-100">
-                    <img src="../images/banner1.jpg" class="d-block  img-fluid object-fill" alt="banner_甜甜圈龜圖">
+                <div class="swiper_item carousel-item h-100 " data-bs-interval="2500">
+                    <img src="../images/banner1.jpg" class="d-block  img-fluid object-cover" alt="banner_甜甜圈龜圖">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder text-light">名字很好ㄘ的龜 - 甜甜圈龜</h2>
+                        <h2 class="fw-bolder text-light">還是公寓住宅最適合養的寵物 ? </h2>
+                        <a href="./water_kind.html"
+                            class="btn btn-light rounded-pill px-5 mt-3 jump_item">點我查看不吵不鬧的萌寵</a>
                     </div>
                 </div>
-                <div class="swiper_item carousel-item h-100">
-                    <img src="../images/land/star/star1.jpg" class="d-block  img-fluid object-fill" alt="banner_星龜圖">
+                <div class="swiper_item carousel-item h-100" data-bs-interval="2500">
+                    <img src="../images/banner3.jpg" class="d-block  img-fluid object-cover" alt="banner_星龜圖">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder">天生帶著星星的龜 - 印度星龜</h2>
+                        <h2 class="fw-bolder">幫您蒐集最完善的飼養攻略 ! </h2>
+                        <a href="./raise.html" class="btn btn-light rounded-pill px-5 mt-3 jump_item">點我查看飼養懶人包</a>
                     </div>
                 </div>
-                <div class="swiper_item carousel-item h-100">
-                    <img src="../images/water/brasil/brasil4.jpg" class="d-block  img-fluid object-fill"
+                <div class="swiper_item carousel-item h-100" data-bs-interval="2500">
+                    <img src="../images/water/brasil/brasil4.jpg" class="d-block  img-fluid object-cover"
                         alt="banner_巴西龜圖">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder">我不是來自巴西的 - 巴西龜</h2>
-                    </div>
-                </div>
-                <div class="swiper_item carousel-item h-100">
-                    <img src="../images/land/sukada/sukada3.jpg" class="d-block  img-fluid object-fill"
-                        alt="banner_蘇卡達象龜圖">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder">龜界坦克車 - 蘇卡達象龜</h2>
-                    </div>
-                </div>
-                <div class="swiper_item carousel-item h-100">
-                    <img src="../images/banner2.jpg" class="d-block  img-fluid object-fill" alt="banner_金龜圖">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fw-bolder">身價不斐的奇異果?! - 鑽紋龜</h2>
+                        <h2 class="fw-bolder">您的愛龜出現問題，卻不知道怎麼解決</h2>
+                        <a href="./faq.html" class="btn btn-light rounded-pill px-5 mt-3 jump_item">點我查看詳細 Q&A</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +158,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(0,'water')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/water/ban/ban2.jpg" alt="斑龜小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover" src="../images/water/ban/ban2.jpg"
+                                alt="斑龜小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light">
                                     斑龜
@@ -177,8 +171,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(3,'water')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/water/brasil/brasil1.jpg"
-                                alt="巴西小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover"
+                                src="../images/water/brasil/brasil1.jpg" alt="巴西小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light">
                                     巴西龜
@@ -190,7 +184,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(4,'water')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/water/east/east3.jpg" alt="東錦小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover" src="../images/water/east/east3.jpg"
+                                alt="東錦小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light ">東部錦龜</h5>
                             </div>
@@ -200,8 +195,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(2,'water')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/water/mutica/mutica1.jpg"
-                                alt="柴棺小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover"
+                                src="../images/water/mutica/mutica1.jpg" alt="柴棺小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light ">柴棺龜</h5>
                             </div>
@@ -233,8 +228,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(1,'land')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/land/sukada/sukada2.jpg"
-                                alt="蘇卡達小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover"
+                                src="../images/land/sukada/sukada2.jpg" alt="蘇卡達小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light">
                                     蘇卡達象龜
@@ -246,8 +241,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(4,'land')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/land/herman/herman1.jpg"
-                                alt="赫曼小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover"
+                                src="../images/land/herman/herman1.jpg" alt="赫曼小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light ">赫曼陸龜</h5>
                             </div>
@@ -258,8 +253,8 @@
                 <li class="col">
                     <a href="#" onclick="location_href(5,'land')" class="intro_item">
                         <div class="card h-100 shadow-sm ">
-                            <img class="img-fluid ratio h-100 rounded" src="../images/land/Leopard/leopard1.jpg"
-                                alt="豹紋小圖">
+                            <img class="img-fluid ratio h-100 rounded object-cover"
+                                src="../images/land/Leopard/leopard1.jpg" alt="豹紋小圖">
                             <div class="card-img-overlay top-auto bg-gradient-dark turtle_intro">
                                 <h5 class="card-title text-light ">豹紋陸龜</h5>
                             </div>
@@ -279,10 +274,10 @@
             <ul class="row row-cols-1 row-cols-lg-3 g-4 list-unstyled faq">
                 <li class="col">
                     <div class="card rounded shadow-sm h-100 jump_item">
-                        <img src="../images/water/brasil/brasil2.jpg" class="img-fluid rounded-top ratio h-100"
-                            alt="巴西龜圖">
+                        <img src="../images/water/brasil/brasil2.jpg"
+                            class="img-fluid rounded-top ratio h-100 object-cover" alt="巴西龜圖">
                         <div class="card-body">
-                            <h5 class="card-title text-coffee fw-bolder">
+                            <h5 class="card-title faq_title fw-bolder">
                                 Q : 請問目前最是新手養的水龜有那些呢 ?
                             </h5>
                             <div class="card-text text-warning">
@@ -294,9 +289,10 @@
                 </li>
                 <li class="col">
                     <div class="card rounded shadow-sm h-100 jump_item">
-                        <img src="../images/land/star/star2.jpg" class="img-fluid rounded-top ratio h-100" alt="星龜圖">
+                        <img src="../images/land/star/star2.jpg" class="img-fluid rounded-top ratio h-100 object-cover"
+                            alt="星龜圖">
                         <div class="card-body">
-                            <h5 class="card-title text-coffee fw-bolder">
+                            <h5 class="card-title faq_title fw-bolder">
                                 Q : 請問飼養陸龜需要有證書嗎 ?
                             </h5>
                             <div class="card-text text-warning">
@@ -308,9 +304,10 @@
                 </li>
                 <li class="col">
                     <div class="card rounded shadow-sm h-100 jump_item">
-                        <img src="../images/water/east/east1.jpg" class="img-fluid rounded-top ratio h-100" alt="東錦圖">
+                        <img src="../images/water/east/east1.jpg" class="img-fluid rounded-top ratio h-100 object-cover"
+                            alt="東錦圖">
                         <div class="card-body">
-                            <h5 class="card-title text-coffee fw-bolder">
+                            <h5 class="card-title faq_title fw-bolder">
                                 Q : 請問我的愛龜的殼有翹甲的情形怎麼辦呢 ?
                             </h5>
                             <div class="card-text text-warning">
@@ -331,7 +328,7 @@
 
     </main>
 
-    <footer class="p-4 bg-footer">
+    <footer class="footer p-4 bg-footer">
         <div class="container mt-3 text-warning text-center">
             <h2>烏龜百科</h2>
             <p>本網站僅為個人作品練習，並無商業行為，所引用網址皆在 <a href="./link.html" class="link-warning">參考連結</a> 。</p>
@@ -339,18 +336,18 @@
             <h4 class="my-3">CONTACT ME</h4>
             <ul class="list-unstyled d-flex justify-content-center align-items-center">
                 <li class="me-3">
-                    <a class="h2" target="_blank" style="color:#614124;"
+                    <a class="h2 contact_link" target="_blank"
                         href="https://www.facebook.com/profile.php?id=100006967029671">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
                 <li class="me-3">
-                    <a class="h2" target="_blank" style="color:#614124;" href="https://line.me/ti/p/vrSkSFzfp7">
+                    <a class="h2 contact_link" target="_blank" href="https://line.me/ti/p/vrSkSFzfp7">
                         <i class="bi bi-line"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="h2" target="_blank" style="color:#614124;" href="https://github.com/d1074181068">
+                    <a class="h2 contact_link" target="_blank" href="https://github.com/d1074181068">
                         <i class="bi bi-github"></i>
                     </a>
                 </li>

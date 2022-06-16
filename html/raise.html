@@ -30,12 +30,12 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <h2 class="logo">
+                    <h1 class="logo mb-0">
                         <a class="navbar-brand fw-bolder" href="./index.html">
                             <img src="../images/logo.png" alt="logo圖" class="img-fluid">
                             烏龜百科
                         </a>
-                    </h2>
+                    </h1>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#header_offcanvas" aria-controls="header_offcanvas" aria-expanded="false"
@@ -44,7 +44,11 @@
                     </button>
                     <div class="offcanvas offcanvas-start opacity-100" tabindex="-1" id="header_offcanvas">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title">烏龜百科</h5>
+                            <h5 class="offcanvas-title">
+                                <a class="navbar-brand fw-bolder" href="./index.html">
+                                    烏龜百科
+                                </a>
+                            </h5>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
@@ -87,7 +91,7 @@
             <div class="row row-cols-1 row-cols-lg-2 g-4">
                 <div class="col">
                     <h2 class="mb-3 text-warning text-center">水龜飼養</h2>
-                    <nav>
+                    <nav class="raise_nav">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link link-warning active" id="nav-env_water-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-env_water" type="button" role="tab" aria-controls="nav-env_water"
@@ -101,7 +105,7 @@
                         </div>
                     </nav>
                     <div class="tab-content overflow-auto" id="nav-tabContent" style="height: 500px;">
-                        <article class="tab-pane fade show active p-4" id="nav-env_water" role="tabpanel"
+                        <article class="raise_article tab-pane fade show active p-4" id="nav-env_water" role="tabpanel"
                             aria-labelledby="nav-env_water-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
@@ -113,8 +117,8 @@
                                     <p>
                                         水的高度需要高於背殼頂端，確保水龜不慎翻面時，有足夠水量或是底部的底材，使其自行翻回；另外斑龜善於攀爬，極容易越獄，飼養箱需要加蓋。
                                     </p>
-                                    <img src="../images/tw3.jpg" class="w-50" alt="班龜越獄圖"><span
-                                        class="d-block text-danger fw-bolder">附上我家班龜越獄行動 "之一" 圖</span>
+                                    <img src="../images/tw3.jpg" class="w-50 object-cover" alt="班龜越獄圖"><span
+                                        class="d-block warning_txt fw-bolder">附上我家班龜越獄行動 "之一" 圖</span>
 
                                 </li>
                                 <li class="mb-4">
@@ -130,7 +134,7 @@
                                     </p>
                                     <p>
                                         陸地的選擇可以使用市面上所販賣的浮台，或是自己購買魚缸隔板手做成自己想要的曬台。
-                                        <span class="d-block text-danger">(如下方環境總覽的圖片，都是龜奴本人親自搭建XD)</span>
+                                        <span class="d-block warning_txt">(如下方環境總覽的圖片，都是龜奴本人親自搭建XD)</span>
                                     </p>
                                 </li>
                                 <li class="mb-4">
@@ -158,39 +162,40 @@
                                     <h4>環境總覽參考 : </h4>
                                     <ul class="row row-cols-1 row-cols-lg-2 g-3 list-unstyled">
                                         <li class="col">
-                                            <img src="../images/water_env/env1.jpg" class="img-fluid ratio h-100"
-                                                alt="">
+                                            <img src="../images/water_env/env1.jpg"
+                                                class="img-fluid object-cover ratio h-100" alt="">
                                         </li>
                                         <li class="col">
-                                            <img src="../images/water_env/env2.jpg" class="img-fluid ratio h-100"
-                                                alt="">
+                                            <img src="../images/water_env/env2.jpg"
+                                                class="img-fluid object-cover ratio h-100" alt="">
                                         </li>
                                         <li class="col">
-                                            <img src="../images/water_env/env3.jpg" class="img-fluid ratio h-100"
-                                                alt="">
+                                            <img src="../images/water_env/env3.jpg"
+                                                class="img-fluid object-cover ratio h-100" alt="">
                                         </li>
                                         <li class="col">
-                                            <img src="../images/water_env/env4.jpg" class="img-fluid ratio h-100"
-                                                alt="">
+                                            <img src="../images/water_env/env4.jpg"
+                                                class="img-fluid object-cover ratio h-100" alt="">
                                         </li>
                                         <li class="col">
-                                            <img src="../images/water_env/env5.jpg" class="img-fluid ratio h-100"
-                                                alt="">
+                                            <img src="../images/water_env/env5.jpg"
+                                                class="img-fluid object-cover ratio h-100" alt="">
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </article>
-                        <article class="tab-pane fade p-4" id="nav-filter" role="tabpanel"
+                        <article class="raise_article tab-pane fade p-4" id="nav-filter" role="tabpanel"
                             aria-labelledby="nav-filter-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
                                     <h4>原理 : </h4>
                                     <p>過濾器由過濾槽、抽水馬達和過濾材料組成。它的工作原理是通過抽水泵將水族箱內的水抽吸到過濾槽中，由過濾槽內的過濾材料進行過濾將水中的汙染物(ex:糞便、食物殘渣...等)先由<span
-                                            class="text-danger ">物理過濾 </span>先濾掉，再經由<span class="text-danger ">化學過濾
+                                            class="warning_txt ">物理過濾 </span>先濾掉，再經由<span
+                                            class="warning_txt warning_txt ">化學過濾
                                         </span>產生
-                                        <span class="text-danger ">硝化菌</span> ，將硝化菌跟著出水口進入水中接著 <span
-                                            class="text-danger ">硝化菌會分解水中有毒物質</span>，讓水中保持乾淨清澈。
+                                        <span class="warning_txt ">硝化菌</span> ，將硝化菌跟著出水口進入水中接著 <span
+                                            class="warning_txt ">硝化菌會分解水中有毒物質</span>，讓水中保持乾淨清澈。
                                     </p>
                                 </li>
                                 <li class="mb-4 text-warning fw-bolder">------以下過濾系統圖片皆為示意，並無特別推薦或廣告 !------</li>
@@ -198,7 +203,7 @@
                                     <h5 class="text-warning ">低水位過濾</h5>
                                     <img src="../images/filter/low.jpg" class="w-50 mb-4" alt="低水位過濾器圖">
                                     <p>
-                                        因為蠻多人推薦新手使用這款，但我們並<span class="text-danger ">不推薦使用
+                                        因為蠻多人推薦新手使用這款，但我們並<span class="warning_txt ">不推薦使用
                                         </span>，這種過濾器基本就是一片過濾板。過濾板內有一點點活性炭。是無法培菌的，不太可能形成良好的生化過濾。即使有的可以自己添加一點點濾材效果也不是很明顯。
                                     </p>
                                     <ul>
@@ -270,14 +275,16 @@
                                 </li>
                             </ul>
                         </article>
-                        <article class="tab-pane fade p-4" id="nav-care_water" role="tabpanel"
+                        <article class="raise_article tab-pane fade p-4" id="nav-care_water" role="tabpanel"
                             aria-labelledby="nav-care_water-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
                                     <h4>換水 : </h4>
                                     <p>
-                                        食物殘渣和排泄物會使水混濁、發臭，因此需要做換水的動作，若無過濾系統建議 <span class="text-danger  fw-bolder">2~3天
-                                        </span>換一次，有過濾系統的話，看水的情形與過濾強度大概<span class="text-danger  fw-bolder">7-14天
+                                        食物殘渣和排泄物會使水混濁、發臭，因此需要做換水的動作，若無過濾系統建議 <span
+                                            class="warning_txt warning_txt  fw-bolder">2~3天
+                                        </span>換一次，有過濾系統的話，看水的情形與過濾強度大概<span
+                                            class="warning_txt warning_txt  fw-bolder">7-14天
                                         </span>換一次水；
                                     </p>
                                     <p>
@@ -290,7 +297,7 @@
                                     </p>
                                     <p>
                                         另外，烏龜最為需要的為鈣，餵食時請搭配含有鈣的食物，烏龜補充鈣質搭配曬太陽攝取太陽中的<span
-                                            class="text-danger  fw-bolder">UVB </span>元素，這樣有助於龜殼的成長，不翹甲
+                                            class="warning_txt  fw-bolder">UVB </span>元素，這樣有助於龜殼的成長，不翹甲
                                     </p>
                                 </li>
                                 <li class="mb-4">
@@ -306,7 +313,7 @@
                 </div>
                 <div class="col">
                     <h2 class="mb-3  text-warning text-center">陸龜飼養</h2>
-                    <nav>
+                    <nav class="raise_nav">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link link-warning active" id="nav-env_land-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-env_land" type="button" role="tab" aria-controls="nav-env_land"
@@ -320,21 +327,21 @@
                         </div>
                     </nav>
                     <div class="tab-content overflow-auto" id="nav-tabContent" style="height: 500px;">
-                        <article class="tab-pane fade p-4 show active" id="nav-env_land" role="tabpanel"
+                        <article class="raise_article tab-pane fade p-4 show active" id="nav-env_land" role="tabpanel"
                             aria-labelledby="nav-env_land-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
                                     <h4 class="text-warning">溫濕度 : </h4>
                                     <p>
-                                        陸龜適宜的溫度在<span class="text-danger  fw-bolder">20-30度
-                                        </span>區間範圍內；適宜的濕度在<span class="text-danger  fw-bolder">50%-80%
+                                        陸龜適宜的溫度在<span class="warning_txt  fw-bolder">20-30度
+                                        </span>區間範圍內；適宜的濕度在<span class="warning_txt  fw-bolder">50%-80%
                                         </span>之間（龜苗均需要相對高的濕度，豹龜也不可濕度過低），隨著每個品種上升或下降
                                     </p>
                                 </li>
                                 <li class="mb-4">
                                     <h4 class="text-warning">保溫材料&空間 : </h4>
                                     <p>
-                                        飼養箱多選擇<span class="text-danger  fw-bolder">保溫效果較好
+                                        飼養箱多選擇<span class="warning_txt  fw-bolder">保溫效果較好
                                         </span>的木箱，木材不限（新型PVC材料也是不錯的選擇）。尺寸越大越好，畢竟大部分陸龜成體都不小。
                                     </p>
                                     <p>
@@ -345,8 +352,8 @@
                                     <h4 class="text-warning">通風 : </h4>
                                     <p>
                                         除了要保溫之外，通風條件也是很重要的，通風影響溫度及濕度非常多，<span
-                                            class="text-danger  fw-bolder">悶濕的環境容易讓龜嗜睡、生病和細菌的滋生</span>，可以安裝<span
-                                            class="text-danger  fw-bolder">排風扇 </span>讓整體環境通風。
+                                            class="warning_txt  fw-bolder">悶濕的環境容易讓龜嗜睡、生病和細菌的滋生</span>，可以安裝<span
+                                            class="warning_txt  fw-bolder">排風扇 </span>讓整體環境通風。
                                     </p>
                                 </li>
                                 <li class="mb-4">
@@ -386,18 +393,19 @@
                                 </li>
                             </ul>
                         </article>
-                        <article class="tab-pane fade p-4" id="nav-light" role="tabpanel"
+                        <article class="raise_article tab-pane fade p-4" id="nav-light" role="tabpanel"
                             aria-labelledby="nav-light-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
                                     <h4 class="text-warning">聚熱燈（含UVA燈） : </h4>
                                     <p>
-                                        聚熱燈是有聚熱塗層的白熾燈，隨開隨熱，主要是<span class="text-danger  fw-bolder">維持環境溫度
+                                        聚熱燈是有聚熱塗層的白熾燈，隨開隨熱，主要是<span class="warning_txt  fw-bolder">維持環境溫度
                                         </span>所用，可通過改變距離來達到調節曬點溫度的目的。
                                     </p>
                                     <p>
-                                        在使用時須<span class="text-danger  fw-bolder">注意與陸龜距離
-                                        </span>，以免灼傷陸龜，另外可以利用調整距離營造出<span class="text-danger  fw-bolder">冷熱分區
+                                        在使用時須<span class="warning_txt  fw-bolder">注意與陸龜距離
+                                        </span>，以免灼傷陸龜，另外可以利用調整距離營造出<span
+                                            class="warning_txt warning_txt  fw-bolder">冷熱分區
                                         </span>，讓他們自己隨意選擇。
                                     </p>
                                 </li>
@@ -405,13 +413,16 @@
                                     <h4 class="text-warning">UVB燈 : </h4>
                                     <p>
                                         燈上面的數字2.0、5.0、8.0、10.0是UVB占總光線輸出量的百分比，使用一年後需要更換，有效使用高度是<span
-                                            class="text-danger  fw-bolder">燈具下緣距離龜背25—30cm
-                                        </span>，最好裝在龜箱頂部中心位置，並保證無遮擋照射，<span class="text-danger  fw-bolder">UVA、UVB晚上要關掉
+                                            class="warning_txt  fw-bolder">燈具下緣距離龜背25—30cm
+                                        </span>，最好裝在龜箱頂部中心位置，並保證無遮擋照射，<span
+                                            class="warning_txt warning_txt  fw-bolder">UVA、UVB晚上要關掉
                                         </span>，避免影響陸龜休息。
                                     </p>
                                     <p>
-                                        另外每個個體所需要的UVB輸出量會有差異，再次強調盡量以<span class="text-danger  fw-bolder">多曬太陽代替開UVB燈
-                                        </span>，太陽光所含的UVB遠超於燈具，<span class="text-danger  fw-bolder">燈具只是做輔助使用
+                                        另外每個個體所需要的UVB輸出量會有差異，再次強調盡量以<span
+                                            class="warning_txt warning_txt  fw-bolder">多曬太陽代替開UVB燈
+                                        </span>，太陽光所含的UVB遠超於燈具，<span
+                                            class="warning_txt warning_txt  fw-bolder">燈具只是做輔助使用
                                         </span>。
                                     </p>
                                 </li>
@@ -429,7 +440,7 @@
                                 </li>
                             </ul>
                         </article>
-                        <article class="tab-pane fade p-4" id="nav-care_land" role="tabpanel"
+                        <article class="raise_article tab-pane fade p-4" id="nav-care_land" role="tabpanel"
                             aria-labelledby="nav-care_land-tab">
                             <ul class="list-unstyled">
                                 <li class="mb-4">
@@ -446,29 +457,29 @@
                                 <li class="mb-4">
                                     <h4 class="text-warning">餵食頻率(龜苗) : </h4>
                                     <ul>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">生長速度快
-                                            </span>的龜苗及幼體建議<span class="text-danger  fw-bolder">一天餵食1~2次
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">生長速度快
+                                            </span>的龜苗及幼體建議<span class="warning_txt  fw-bolder">一天餵食1~2次
                                             </span>，如蘇卡達、豹紋、亞達。</li>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">生長速度普通
-                                            </span>建議<span class="text-danger  fw-bolder">1-2天餵食1次
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">生長速度普通
+                                            </span>建議<span class="warning_txt  fw-bolder">1-2天餵食1次
                                             </span>，如紅腿苗、緬陸苗、星。</li>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">生長速度較慢
-                                            </span>建議<span class="text-danger  fw-bolder">2天餵食一次
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">生長速度較慢
+                                            </span>建議<span class="warning_txt  fw-bolder">2天餵食一次
                                             </span>，如赫曼、四爪、緬陸等。</li>
                                     </ul>
                                 </li>
                                 <li class="mb-4">
                                     <h4 class="text-warning">泡澡頻率 : </h4>
                                     <ul>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">需要排酸
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">需要排酸
                                             </span>的品種建議 <span
-                                                class="text-danger  fw-bolder">1~2天泡澡一次</span>，水溫30℃左右即可，如蘇卡達、星龜、赫曼。
+                                                class="warning_txt  fw-bolder">1~2天泡澡一次</span>，水溫30℃左右即可，如蘇卡達、星龜、赫曼。
                                         </li>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">不需要排酸
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">不需要排酸
                                             </span>的品種建議 <span
-                                                class="text-danger  fw-bolder">2~7天泡澡一次</span>，水溫同樣30℃左右即可，如紅腿、輻射、豹紋。
+                                                class="warning_txt  fw-bolder">2~7天泡澡一次</span>，水溫同樣30℃左右即可，如紅腿、輻射、豹紋。
                                         </li>
-                                        <li class="mb-2"><span class="text-danger  fw-bolder">泡澡水溫30度
+                                        <li class="mb-2"><span class="warning_txt  fw-bolder">泡澡水溫30度
                                             </span>左右為宜，水深至龜的下巴處即可。可在泡澡的同時將龜置於陽光下曬太陽。</li>
                                     </ul>
                                 </li>
@@ -493,7 +504,7 @@
 
     </main>
 
-    <footer class="p-4 bg-footer">
+    <footer class="footer p-4 bg-footer">
         <div class="container mt-3 text-warning text-center">
             <h2>烏龜百科</h2>
             <p>本網站僅為個人作品練習，並無商業行為，所引用網址皆在 <a href="./link.html" class="link-warning">參考連結</a> 。</p>
@@ -501,18 +512,18 @@
             <h4 class="my-3">CONTACT ME</h4>
             <ul class="list-unstyled d-flex justify-content-center align-items-center">
                 <li class="me-3">
-                    <a class="h2" target="_blank" style="color:#614124;"
+                    <a class="h2 contact_link" target="_blank"
                         href="https://www.facebook.com/profile.php?id=100006967029671">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
                 <li class="me-3">
-                    <a class="h2" target="_blank" style="color:#614124;" href="https://line.me/ti/p/vrSkSFzfp7">
+                    <a class="h2 contact_link" target="_blank" href="https://line.me/ti/p/vrSkSFzfp7">
                         <i class="bi bi-line"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="h2" target="_blank" style="color:#614124;" href="https://github.com/d1074181068">
+                    <a class="h2 contact_link" target="_blank" href="https://github.com/d1074181068">
                         <i class="bi bi-github"></i>
                     </a>
                 </li>

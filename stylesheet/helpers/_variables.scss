@@ -75,6 +75,8 @@ $danger: $red  !default;
 $light: $gray-100  !default;
 $dark: $gray-900  !default;
 $footer: #C1AC95;
+$warning_txt : #C85A17;
+$coffee: #BB9981;
 
 // scss-docs-end theme-color-variables
 
@@ -82,16 +84,14 @@ $footer: #C1AC95;
 $theme-colors: (
     "theme":$body,
     "primary": #CC704B,
-    "secondary": #D6D6D6,
-    //$secondary,
+    "secondary": $secondary,
     "success": $success,
     "info": $info,
     "warning": #614124,
-    "danger": #C85A17,
+    "danger": $danger,
     "light": $light,
     "dark": $dark,
-    "footer":#C1AC95,
-    "coffee":#BB9981) !default;
+    "footer":#C1AC95) !default;
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-colors-rgb
