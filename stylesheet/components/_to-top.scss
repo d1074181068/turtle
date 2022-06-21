@@ -14,14 +14,21 @@
         writing-mode: vertical-lr;
         padding: 16px 8px;
         letter-spacing: 5px;
+
+        &.active {
+            display: block;
+        }
     }
 
-    &:hover p {
-        display: block;
-    }
 
     img {
         width: 70px;
         height: 70px;
+    }
+}
+
+@media(min-width:768px) {
+    .to_top:hover p {
+        display: block;
     }
 }

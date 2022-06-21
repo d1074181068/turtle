@@ -17,8 +17,9 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: 0
         }, 700);
+        $('.to_top p').addClass('active')
         setTimeout(() => {
-            $('.to_top p').css('display', 'none')
+            $('.to_top p').removeClass('active')
         }, 1000);
 
     });

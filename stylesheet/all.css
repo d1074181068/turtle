@@ -12306,13 +12306,19 @@ fieldset:disabled .btn {
   letter-spacing: 5px;
 }
 
-.to_top:hover p {
+.to_top p.active {
   display: block;
 }
 
 .to_top img {
   width: 70px;
   height: 70px;
+}
+
+@media (min-width: 768px) {
+  .to_top:hover p {
+    display: block;
+  }
 }
 
 .raise_nav .nav-tabs {
