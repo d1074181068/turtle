@@ -17,6 +17,7 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: 0
         }, 700);
+        $('.to_top p').css('display', 'none')
     });
     function showBtnCondition() {
         if ($(this).scrollTop() > 700) {
