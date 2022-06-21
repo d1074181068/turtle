@@ -32,7 +32,21 @@
     }
 }
 
+.header {
+    min-width: 73px;
+    background-color: $header;
+    opacity: 0.75;
+
+    .navbar-light .navbar-nav .nav-link.active {
+        font-weight: bolder;
+        color: $warning;
+        border-bottom: 2px solid $warning;
+    }
+}
+
 .footer {
+    background-color: $footer;
+
     .contact_link {
         color: $warning;
     }
@@ -40,8 +54,7 @@
 
 
 .accordion-header .accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #C1AC95;
+    background-color: $footer;
 }
 
 .accordion-header .accordion-button:not(.collapsed)::after {

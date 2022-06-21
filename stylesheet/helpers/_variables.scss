@@ -74,7 +74,8 @@ $warning: #614124 !default;
 $danger: $red  !default;
 $light: $gray-100  !default;
 $dark: $gray-900  !default;
-$footer: #C1AC95;
+$header: #F6E3C5;
+$footer: #DFBB9D;
 $warning_txt : #C85A17;
 $coffee: #BB9981;
 
@@ -90,8 +91,7 @@ $theme-colors: (
     "warning": #614124,
     "danger": $danger,
     "light": $light,
-    "dark": $dark,
-    "footer":#C1AC95) !default;
+    "dark": $dark) !default;
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-colors-rgb
