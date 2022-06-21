@@ -28,6 +28,5 @@ $(document).ready(function () {
 
     $('#header_offcanvas').on('hidden.bs.offcanvas', function () {
         $('.header').removeClass('opacity-100');
-        console.log(123);
     });
 });
