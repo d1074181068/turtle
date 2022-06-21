@@ -186,7 +186,7 @@ const land_data = [
         decription3: '赫曼陸龜成體後也一樣保持著旺盛的活動力。對於飼養者赫曼陸龜表現的非常親人，飼養不用多長時間，它就會認得主人，並形成固定的行為模式和習慣。'
     }, {
         name: '豹紋陸龜',
-        eng_name: 'leopard',
+        eng_name: 'Leopard',
         img_count: 3,
         feed: 4,
         action: 3,
