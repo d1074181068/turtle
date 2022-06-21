@@ -21,4 +21,13 @@ $(document).ready(function () {
         }
     }
     $(window).scroll(showBtnCondition);
+
+    $('#header_offcanvas').on('show.bs.offcanvas', function () {
+        $('.header').addClass('opacity-100');
+    });
+
+    $('#header_offcanvas').on('hidden.bs.offcanvas', function () {
+        $('.header').removeClass('opacity-100');
+        console.log(123);
+    });
 });

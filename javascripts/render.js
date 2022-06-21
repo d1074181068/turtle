@@ -243,7 +243,6 @@ const decription2 = document.querySelector('#decription2');
 const decription3 = document.querySelector('#decription3');
 const swiper = document.querySelector('#intro_img_swiper');
 const bread_active = document.querySelector('#bread_active');
-
 let feed_star = '';
 let action_star = '';
 let swiper_str = '';
